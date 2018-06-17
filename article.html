@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <title>02_Filter</title>
+    <script src="https://use.fontawesome.com/771d69edc4.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- ============= Header區 ============= -->
+    <header>
+        <div class="innerWrap">
+            <div class="logo ">
+                <a href="#">HaveFun</a>
+            </div>
+            <div class="search">
+                <label for="searchBar">
+                    <i class="fa fa-search" aria-hidden="true"></i><input type="text" name="searchBar" placeholder="Explore your own activities">
+                </label>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ============= Main區 ============= -->
+    <main class="articleContent">
+        <!-- Menu(左邊) -->
+        <aside>
+            <div>
+                <p>Location<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <select class="location">
+                        <option value="">請選地區</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Japan">Japan</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </section>
+            </div>
+            <div>
+                <p>Date<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <label>
+                    <span>from</span><input type="date" name="">
+                    </label><br>
+                    <label>
+                        <span>to</span><input type="date" name="">
+                    </label>     
+                </section>
+            </div>
+            <div>
+                <p>Categories<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <input type="checkbox">
+                    <label>All</label><br>
+                    <input type="checkbox">
+                    <label>Entertainment</label><br>
+                    <input type="checkbox">
+                    <label>Food</label><br>
+                    <input type="checkbox">
+                    <label>Learning</label><br>
+                    <input type="checkbox">
+                    <label>Outdoors</label>
+                </section>
+            </div>
+        </aside>
+        
+        <!-- 內容(右邊) -->
+        <section>
+            <div class="searchResult">
+                <span>Explore</span>
+                <span>/ Kogi Cosby sweater </span>
+            </div>
+            <article class="contentWrap">
+                <figure>
+                    <img src="images/Italy.jpg">
+                </figure>
+                <div class="content">
+                    <h1>Kogi Cosby sweater ethical.</h1>
+                    <div class="tagBlock">
+                        <span class="tag">Ethan Foster</span>
+                        <span class="tag actTag">Entertainment</span>
+                    </div>
+                    <div class="infoBlock">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i>Kaohsiung City</span>
+                        <span><i class="fa fa-calendar" aria-hidden="true"></i>2018/5/24 - 2018/5/31</span>
+                    </div>
+                    <p>In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among the crew. Now hands are wanted here, and then again hands are wanted there. There is no staying in any one place; for at one and the same time everything has to be done everywhere. It is much the same with him who endeavors the description of the scene. We must now retrace our way a little.</p>
+                    <p>It was mentioned that upon first breaking ground in the whale's back, the blubber-hook was inserted into the original hole there cut by the spades of the mates. But how did so clumsy and weighty a mass as that same hook get fixed in that hole? It was inserted there by my particular friend Queequeg, whose duty it was, as harpooneer, to descend upon the monster's back for the special purpose referred to. But in very many cases, circumstances require that the.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="js/all.js"></script>
+</html>

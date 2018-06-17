@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <title>02_Filter</title>
+    <script src="https://use.fontawesome.com/771d69edc4.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- ============= Header區 ============= -->
+    <header>
+        <div class="innerWrap">
+            <div class="logo ">
+                <a href="#">HaveFun</a>
+            </div>
+            <div class="search">
+                <label for="searchBar">
+                    <i class="fa fa-search" aria-hidden="true"></i><input type="text" name="searchBar" placeholder="Explore your own activities">
+                </label>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ============= Main區 ============= -->
+    <main>
+        <!-- Menu(左邊) -->
+        <aside>
+            <div>
+                <p>Location<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <select class="location">
+                        <option value="">請選地區</option>
+                        <option value="Taiwan">Taiwan</option>
+                        <option value="Japan">Japan</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </section>
+            </div>
+            <div>
+                <p>Date<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <label>
+                    <span>from</span><input type="date" name="">
+                    </label><br>
+                    <label>
+                        <span>to</span><input type="date" name="">
+                    </label>     
+                </section>
+            </div>
+            <div>
+                <p>Categories<i class="fa fa-plus" aria-hidden="true"></i></p>
+                <section>
+                    <input type="checkbox">
+                    <label>All</label><br>
+                    <input type="checkbox">
+                    <label>Entertainment</label><br>
+                    <input type="checkbox">
+                    <label>Food</label><br>
+                    <input type="checkbox">
+                    <label>Learning</label><br>
+                    <input type="checkbox">
+                    <label>Outdoors</label>
+                </section>
+            </div>
+        </aside>
+        
+        <!-- 內容(右邊) -->
+        <section>
+            <div class="showResult">
+                <p>Showing <span class="showNum">15</span> results by…</p>
+                <span class="showTag">Koahsiung<i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+                <span class="showTag">Entertainment<i class="fa fa-times-circle-o" aria-hidden="true"></i></span>
+            </div>
+            <ul class="articleList">
+                <li>
+                    <a href="article.html">
+                        <figure> <img src="images/Italy.jpg"> </figure>
+                        <article>
+                            <h2>Kogi Cosby sweater.</h2>
+                            <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                            <div class="tagBlock"> <span class="tag">Ethan Foster</span> <span class="tag actTag">Entertainment</span> </div>
+                            <div class="infoBlock"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Kaohsiung City</span> <span><i class="fa fa-calendar" aria-hidden="true"></i>2018/5/24 - 2018/5/31</span> </div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="article.html">
+                        <figure> <img src="images/Italy.jpg"> </figure>
+                        <article>
+                            <h2>Kogi Cosby sweater.</h2>
+                            <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                            <div class="tagBlock"> <span class="tag">Ethan Foster</span> <span class="tag actTag">Entertainment</span> </div>
+                            <div class="infoBlock"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Kaohsiung City</span> <span><i class="fa fa-calendar" aria-hidden="true"></i>2018/5/24 - 2018/5/31</span> </div>
+                        </article>
+                    </a>
+                </li>
+                <li>
+                    <a href="article.html">
+                        <figure> <img src="images/Italy.jpg"> </figure>
+                        <article>
+                            <h2>Kogi Cosby sweater.</h2>
+                            <p>Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.</p>
+                            <div class="tagBlock"> <span class="tag">Ethan Foster</span> <span class="tag actTag">Entertainment</span> </div>
+                            <div class="infoBlock"> <span><i class="fa fa-map-marker" aria-hidden="true"></i>Kaohsiung City</span> <span><i class="fa fa-calendar" aria-hidden="true"></i>2018/5/24 - 2018/5/31</span> </div>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+            <div class="pageNum w3-right">
+                <div class="w3-bar w3-border">
+                    <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+                    <a href="#" class="w3-bar-item w3-button">1</a>
+                    <a href="#" class="w3-bar-item w3-button">2</a>
+                    <a href="#" class="w3-bar-item w3-button">3</a>
+                    <a href="#" class="w3-bar-item w3-button">4</a>
+                    <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/all.js"></script>
+</html>

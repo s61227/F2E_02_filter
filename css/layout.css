@@ -1,0 +1,165 @@
+/* ====== CSS Reset ====== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ====== 共用CSS ====== */
+body{ width: 100%; background-color: #F2F2F2; font-family: "Open Sans Regular",Helvetica,Arial,Sans-serif,Microsoft JhengHei;}
+
+/* ====== Header區CSS ====== */
+header{ width: 100%; background-color: #7828B4;}
+header .innerWrap{ max-width: 1200px; margin: 0 auto; display: flex; }
+.logo{ padding: 0 42px 0 38px; }
+.logo a { font-size: 36px; color: #fff; font-weight: bold; text-decoration: none; display: inline-block; margin: 24px 71.5px; }
+
+.search { line-height: 84px; }
+.search label{ border-bottom: 1px solid #fff; padding-bottom: 5px;}
+.search label i{ color: #fff; margin-right: 20px; }
+.search label input{ border: none; background-color: transparent; color: #fff; width: 388px; }
+.search label input::placeholder{ color: rgba(255,255,255,0.50); font-style: italic; }
+.search label input:focus{ outline: none;}
+
+@media screen and (max-width: 768px){
+    .search label input{ width: auto; }
+    .logo{ padding: 0 42px 0 0;}
+}
+@media screen and (max-width: 414px){
+    header{ background-color: #EBEBEB; margin-bottom: 6px;}
+    header .innerWrap{ display: block;}
+    .logo{ background-color: #7828B4; text-align: center; padding: 0;}
+    .search { text-align: center; line-height: 55px; box-shadow: 0 5px 10px 0 #D7D7D7; font-size: 20px; }
+    .search label{ border-bottom: 1px solid #000;}
+    .search label i{ color: #000; }
+    .search label input{ color: #000; }
+    .search label input::placeholder{ color: #9B9B9B; font-style: italic; }
+}
+
+/* ====== Main區CSS ====== */
+/* Menu(左邊) */
+main{ max-width: 1200px; margin: 0 auto; display: flex; align-items: flex-start;}
+main aside{ background-color: #EBEBEB; margin-left: 38px; font-size: 16px;}
+main aside div{ padding: 24px 40px; border-bottom: 1px solid #D7D7D7;}
+main aside div p{ font-size: 20px; font-weight: bold;}
+main aside div p>i.fa-plus{ display: none; color: #9B9B9B;}
+main aside div p>i.fa-minus{ display: none; color: #9B9B9B;}
+main aside div>section{ margin-top: 20px;}
+main aside div section select{ width: 220px; height: 30px;}
+main aside div section select option{}
+main aside div section label{ display: inline-block; margin-bottom: 8px;}
+main aside div section label input{ width: 169px; height: 30px; }
+main aside div section label span{ margin-right: 13px; width: 32px; display: inline-block; text-align: right;}
+
+@media screen and (max-width: 768px){
+    main aside{ margin-left: 0;}
+}
+@media screen and (max-width: 414px){
+    main{ display: block; }
+    main aside div>section{ display: none;}
+    main aside div>section.open { display: block; }
+    main aside div section select{ width:100%; height: 30px;}
+    main aside div:nth-of-type(2) section >label{ width: 100%;}
+    main aside div section label input{ width:85%; height: 30px; }
+    main aside div p>i.fa-plus{ display: inline-block; float: right;}
+    main aside div p>i.fa-minus{ display: inline-block; float: right;}
+}
+
+/* 內容(右邊)_index */
+main>section{ margin:0 40px;}
+
+.showResult{ margin: 24px 0;}
+.showResult p{ font-size: 24px; margin-bottom: 12px;}
+.showResult p>span{ color: #9013FE; font-weight: bold; line-height: 36px;}
+.showResult>span{ display: inline-block; color: #9013FE; border: 1px solid #9013FE; border-radius: 100px; padding: 8px 16px; margin-right: 8px; font-style: italic; margin-bottom: 8px;}
+.showResult span> i{ margin-left: 12px;}
+
+ul.articleList{}
+ul.articleList li{  margin-bottom: 24px; background-color: #fff;}
+ul.articleList li a{display: flex; text-decoration: none; }
+ul.articleList li a figure{}
+ul.articleList li a figure img{ width: 220px; height: 100%;}
+ul.articleList li a article{ padding: 24px 20px; }
+ul.articleList li a article h2{font-size: 24px; color: #9013FE; line-height: 36px; font-weight: bold;}
+ul.articleList li a article p{ font-size: 16px; color: #000000; line-height: 24px; margin: 16px 0 13px; max-height: 50px; overflow: hidden;}
+.tagBlock{ margin-bottom: 14px;}
+.tagBlock>span{ font-size: 16px; color: #000000; font-weight: bold; display: inline-block; margin-right: 15px; margin-bottom: 8px;}
+.tagBlock>span.actTag{ color:#fff; font-style: italic; background-color: #D7D7D7; border-radius: 100px; padding: 5px 16px;}
+.infoBlock{}
+.infoBlock>span{ font-size: 16px; color: #9B9B9B; margin-right: 20px;}
+.infoBlock>span i{ color: #000; margin-right: 8px;}
+
+.pageNum{ margin-bottom: 24px;}
+
+
+@media screen and (max-width: 850px){
+    main aside{ margin-left: 0;}
+    ul.articleList li a{ display: block;}
+    ul.articleList li a figure img{ width:100%;}
+    .infoBlock>span{ display: block; margin: 0 0 15px 0;}
+}
+
+/* 內容(右邊)_article */
+.searchResult { margin: 24px 0; background-color: #EBEBEB; border-radius: 4px; padding: 13px 16px;}
+.searchResult span{ font-size: 16px; line-height: 19px; margin-right: 10px;} 
+.searchResult span:nth-of-type(1){ color: #9013FE;}
+.searchResult span:nth-of-type(2){ color: #9B9B9B;}
+
+.contentWrap{ background-color: #fff; padding-bottom: 24px; }
+.contentWrap figure{}
+.contentWrap figure img{ width: 100%;}
+.content{ padding: 0 66px;}
+.content h1{ font-size: 36px; color: #9013FE; line-height: 36px; font-weight: bold; margin: 24px 0;}
+.content .infoBlock{ margin-bottom: 24px;}
+.content p{ font-size: 16px; color: #000000; line-height: 24px; margin-bottom: 30px;}
+
+
+@media screen and (max-width: 414px){
+    .articleContent aside{ display: none;}
+    .articleContent section{ margin:0;}
+    .searchResult{ margin: 24px 20px;}
+    .content{ padding: 0 40px;}
+}
